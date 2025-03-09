@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>buat org hebat</strong>
+                        <p> Happy birthday ya zasqi,  
+                            Haii kamu, happy birthday aku seneng banget punya km as my best friend, jangan pernah kecewa sm diri kamu okay? 
+                            Katanya Allah gabakal ngasih keinginan dihati kamu kalau km gabisa wujudin hal tsbt, Allah ga ngeliat hasil tapii
+                             Allah ngeliat proses kamu buat wujudin keinginan tersebut.. jd km punya 2 pilihan malas atauu berusaha bangkit buat 
+                             wujudin mimpi tersebut. Inget selalu you are loved, you are pretty, you are smart at handling emotion, dan you are going 
+                             to be an amazing friend. -with love hir PS sorry gbs Panjang hehe
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
